@@ -1,0 +1,14 @@
+body {
+    background-color: azure;
+}
+
+#output {
+    background-color: blanchedalmond;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 1080px;
+    content: "Hello";
+}

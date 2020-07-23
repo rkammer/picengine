@@ -1,0 +1,29 @@
+{
+    "name": "picengine",
+    "version": "1.0.0",
+    "description": "Image Generator",
+    "main": "index.js",
+    "bin": {
+        "picengine": "app.js"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "puppeteer": "^5.2.1",
+        "unsplash-js": "^6.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "compile": "tsc -p .\\tsconfig.json",
+        "run": "node .\\bin\\app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rkammer/picengine.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rkammer/picengine/issues"
+    },
+    "homepage": "https://github.com/rkammer/picengine#readme"
+}
