@@ -1,6 +1,9 @@
 import puppeteer from 'puppeteer';
+import {Image} from "./image"
 
 export class PicGenerator {
+
+    private img = new Image();
 
     getFileName() {
         const d : Date = new Date();
@@ -17,7 +20,8 @@ export class PicGenerator {
 
         await page.evaluate(() => {
             let dom : HTMLElement = document.querySelector('#output');
-            dom.style.setProperty("background-color", "blue", "important");
+            // dom.style.setProperty("background-color", "blue", "important");
+            dom.style.setProperty("background-image", "url('https://images.unsplash.com/photo-1508456939591-ff69e38c6dcb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjcyMDQ1fQ')");
             dom.innerHTML = "change to something"
         });
 
